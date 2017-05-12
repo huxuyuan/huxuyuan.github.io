@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+			li{
+				list-style: none;
+			}
+			body{
+				background-color: skyblue;
+			}
+			.box{
+				overflow:hidden;
+				width: 70%;
+				margin: auto;
+				background-color: bisque;
+			}
+			h2{
+				background-color: cadetblue;
+				color: white;
+				padding: 10px;
+			}
+			.box p{
+				margin-top:10px ;
+				margin-bottom: 10px;
+				font-size: 20px;
+				
+			}
+			#way{
+				width: 80%;
+				margin: auto;
+			}
+			.ul1{
+			float: left;
+			width: 40%;			
+			}
+			.ul2{
+			float: left;
+			width: 60%;			
+			}
+			.ul1 li{
+				margin-top: 5px;
+				color: #FF8C00;
+			}
+		     .ul2 li{
+				margin-top: 5px;
+			}
+			#aa{
+				font-size: 20px;
+				color: blueviolet;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h2>1.	DOM Document 对象</h2>
+			
+			<p>1.1.	Document 对象是 Window 对象的一部分，可通过 window.document 属性对其进行访问。</p>
+		    <h2>2.  Document 对象方法</h2>
+		    <div id="way">
+		    <ul class="ul1">
+		    	<div id="aa">
+		    		方法
+		    	</div>
+		    	<li>close()</li>
+		    	<li>getElementById()</li>
+		    	<li>getElementsByName()</li>
+		    	<li>getElementsByTagName()</li>
+		    	<li>open()</li>
+		    	<li>write()</li>
+		    	<li>writeln()</li>
+		    </ul>
+		     <ul class="ul2">
+		     	<div id="aa">
+		    		描述
+		    	</div>
+		    	<li>关闭用 document.open() 方法打开的输出流，并显示选定的数据。</li>
+		    	<li>返回对拥有指定 id 的第一个对象的引用。</li>
+		    	<li>返回带有指定名称的对象集合。</li>
+		    	<li>返回带有指定标签名的对象集合。</li>
+		    	<li>打开一个流，以收集来自任何 document.write() 或 document.writeln() 方法的输出。</li>
+		    	<li>向文档写 HTML 表达式 或 JavaScript 代码</li>
+		    	<li>等同于 write() 方法，不同的是在每个表达式之后写一个换行符。</li>
+		    </ul>
+		    </div>
+		    
+		</div>
+		
+	</body>
+</html>
