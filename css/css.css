@@ -3,6 +3,9 @@
 	margin: auto;
 	background-color:rgba(197, 187, 160, 0.43);
 }
+body{
+	    background-color: dimgrey;
+}
 .title_top{
 	width: 1100px;
 	text-align: center;
@@ -92,7 +95,7 @@ li{
 	color: white;
 	
 }
-.ul li:nth-child(1){
+/*.ul li:nth-child(1){
 	background-color: #FF8C00;
 	width: 150px;
 	height: 40px;
@@ -101,17 +104,16 @@ li{
 	font-size: 25px;
 	font-weight: bold;
 	color: white;
-}
+}*/
 
 .ul li{
-	background-color: #ccc;
-	width: 150px;
-	height: 40px;
-	line-height: 40px;
+	
+	height: 30px;
+	line-height: 30px;
 	padding-left: 20px;
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 }
-.ul li:hover{
+#ul1>li:hover{
 	background-color: red;
 }
 .ul{
@@ -119,10 +121,10 @@ li{
     top: 100px; 
 }
 #ul1{
-	display: none;
 	margin-left: -60px;
 }
 a{
 	text-decoration: none;
 	color: white;
+	    font-family: cursive;
 }
