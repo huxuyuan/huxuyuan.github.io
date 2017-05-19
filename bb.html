@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#ul{
+				float: left;
+			}
+			#ul li{
+				list-style: none;
+				
+			}
+			#ul li a{
+				text-decoration: none;
+				color: #5F9EA0;
+				font-size: 20px;
+			}
+			#ul li a:hover{
+				color: red;
+			}
+			body{
+				background-color: floralwhite
+			}
+			h2{
+				background-color: cadetblue;
+				color: white;
+				padding: 10px;
+			}
+			.img img{
+				width: 100%;
+				height: 200px;
+			}
+			.box{
+				width: 70%;
+				margin: auto;
+				height: 10%;
+				border: 1px solid #CCCCCC;
+				background-color: #FFE4C4;
+			}
+			h4{
+				padding: 10px;
+			}
+			li{
+				list-style: none;
+			}
+			.ul1 li span{
+				color: #5F9EA0;
+			}
+			
+			.ul1{
+				padding: 10px;
+			}
+		h5{
+			font-size: 20px;
+		}
+		.div1{
+			overflow:hidden ;
+			
+		}
+		ul{
+			padding: 20px;
+		}
+		.div1 ul{
+			float: left;
+			margin-left: 30px;
+		}
+		.ulli{
+			font-size: 15px;
+			font-weight: bold;
+		}
+		textarea{
+			width: 70%;
+			height: 300px;
+		}
+		</style>
+	</head>
+	<body>
+		<ul id="ul">
+			<li><a href="jquery 轮播.html">jquery 轮播</a></li>
+			<li><a href="ajax.html">ajax</a></li>
+			<li><a href="css3.html">css3选择符</a></li>
+			<li><a href="js Data.html">js Data</a></li>
+			<li><a href="js DOM.html">js DOM</a></li>
+			<li><a href="js 事件侦听.html">js 事件侦听</a></li>
+			<li><a href="log.html">git 上传</a></li>
+			<li><a href="bb.html">中级考核，面试题</a></li>
+		</ul>
+		<div class="box">
+			
+			<div class="img"><img src="imgs/qin3.jpg" /></div>
+			<h4>回到首页</h4>
+			<h5>1.用原生js怎样添加、删除、插入、替换dom节点</h5>
+			<ul class="ul1">
+				<li>①.创建属性节点 <span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;createAttribute()</span> </li>
+				<li>②.删除子节点     <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; removeChild()</span> </li>
+				<li>③.把新的节点添加到指定节点<span>&emsp;&emsp;&nbsp;appendChild()</span></li>
+				<li>④.替换子节点<span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;replaceChild()</span></li>
+			</ul>
+			
+			<h5>2.列举浏览器对象模型BOM里常用的至少三个对象，并列举window对象的常用方法至少三个？</h5>
+	              <div class="div1">
+	              	<ul class="ul2">
+	              		<li class="ulli">BOM对象</li>
+	              		<li>①.navigator 保存浏览器配置信息对象</li>
+	              		<li>②.userAgent 判断浏览器的信息和版本</li>
+	              		<li>③.cookicEnablcd 判断是否启用cookic</li>
+	              		<li>④.history保存当前的历史记录栈</li>
+	              		<li>⑤.screen 保存显示屏幕的对象信息</li>
+	              	</ul>
+	              	<ul class="ul3">
+	              		<li class="ulli">window对象方法</li>
+	              		<li>①.alert() 警告框</li>
+	              		<li>②.close() 关闭浏览器窗口</li>
+	              		<li>③.open() 打开新窗口</li>
+	              		<li>④.clearInterval() 清除定时器</li>
+	              		<li>⑤.clearTimeout() 方法可取消由 setTimeout() 方法设置的 timeout</li>
+	              	</ul>
+	              </div>
+	              <h5>请用JQuery实现如下效果：ul里的5个li，点击谁,谁就加个下边框为2px宽的红色的虚线样式，其他的里没有此样式？</h5>
+		         <textarea>
+		         	<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.add{
+				border-bottom: 2px dashed red;
+			}
+		</style>
+		<script src="libs/jquery-1.12.4.min.js"></script>
+	</head>
+	<body>
+		<ul class="ul3">
+	              		<li class="ulli">window对象方法</li>
+	              		<li>①.alert() 警告框</li>
+	              		<li>②.close() 关闭浏览器窗口</li>
+	              		<li>③.open() 打开新窗口</li>
+	              		<li>④.clearInterval() 清除定时器</li>
+	              		
+	              	</ul>
+		<script type="text/javascript">
+			$(function(){
+				$(".ul3 li").each(function(){
+					$(".ul3 li").click(function(){
+						$(".ul3 li").removeClass("add");
+						$(this).addClass("add");
+						
+				})
+				})
+				
+			})
+		</script>
+	</body>
+</html>
+		         </textarea>
+		         <button>点我</button>
+		         
+		         <h5>4.Html5的新特性有哪些？</h5>
+		        <ul>
+		        	<li>video:视频</li>
+		        	<li>audio:音频</li>
+		        	<li>canvas:画布</li>
+		        	<li>SVG图片的交互和滤镜效果</li>
+		        	<li>datalist:定义下拉列表。</li>
+		        </ul>
+		        <h5>5.css3的新特性有哪些？</h5>
+		        <ul>
+		        	<li>@keyframes 创建动画</li>
+		        	
+		        </ul>
+		        <h5>6.请说出ajax的核心，指出它的优缺点</h5>
+		        <ul>
+		        	<li>Ajax的核心是JavaScript对象XmlHttpRequest</li>
+		        	<li>优点：无刷新更新页面</li>
+		        	<li>优点：基于标准被广泛支持</li>
+		        	<li>缺点：安全问题</li>
+		        	<li>缺点：AJAX不能很好支持移动设备。</li>
+		        </ul>
+		        <h5>7.表单提交中Get和Post方式的区别</h5>
+		        <ul>
+		        	<li>Get是从服务器上获取数据，post是向服务器传送数据</li>
+		            <li>get安全性低，post安全性高</li>
+		            <li>get传送数据较小，不能大于2KB。post传送数据较大，一般被默认为不受限制。但理论上，IIS4中最大量为80KB，IIS5中为100KB。 </li>
+		        </ul>
+		        <h5>8.什么是跨域？如何解决跨域问题</h5>
+		        <ul>
+		        	<li>跨域是指，不同域名之间相互访问</li>
+		        	<li>josnp</li>
+		        	<li>locascritp</li>
+		        </ul>
+		        <h5>9.描述一下 cookies，sessionStorage和localStorage的区别</h5>
+	                 <ul>
+	                 	<li>cookie：存储在用户本地终端上的数据</li>
+	                 	<li>sessionStorage:窗口或浏览器关闭之前 有效保存，关闭后数据会被删除</li>
+	                 	<li>localStorage 没有时间限制的数据存储，关闭窗口或浏览器仍然有效</li>
+	                 </ul>
+	            <h5>10.编程题：实现一个打点计时器</h5> 
+	            <p>1.从start到end(包含start和end),每隔100毫秒consloe.log
+                     一个数字，每次数字增幅为1
+	            </p>
+	            <p>2.返回的对象中需要包含一个cancel方法，用于停止定时器操作</p>
+		        <p>3.第一个数需要立即输出</p>
+		        <textarea>
+		        	  function count(start,end){
+         	console.log(start);
+         	 var time =setInterval(function(){
+         	    if(start<end){
+         	    	start+=1;
+         	    console.log(start);
+         	    }return {cancel:function(){
+         		clearInterval(time);
+         	}
+         	}
+         },100)
+                      
+         }
+         count(0,1000); 
+		        </textarea>
+		</div>
+		<script type="text/javascript">
+			var btn=document.getElementsByTagName("button")[0];
+			var txt=document.getElementsByTagName("textarea")[0].value; 
+			btn.onclick=function(){
+				var newTab=window.open("about:blank");
+				newTab.document.write(txt);
+			}
+        
+		</script>
+	</body>
+</html>
