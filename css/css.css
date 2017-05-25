@@ -2,6 +2,7 @@
 	width: 1100px;
 	margin: auto;
 	background-color:rgba(197, 187, 160, 0.43);
+	overflow: hidden;
 }
 body{
 	    background-color: dimgrey;
@@ -81,7 +82,8 @@ body{
   width: 190px;
 }
 .detalis{
-
+    float: left;
+    margin-left: 14px;
 }
 .lapei{
 	border: 1px solid #ffce2d;
@@ -117,7 +119,7 @@ li{
 	background-color: red;
 }
 .ul{
-	position: absolute;
+	position: fixed;
     top: 100px; 
 }
 #ul1{
@@ -128,3 +130,48 @@ a{
 	color: white;
 	    font-family: cursive;
 }
+.div2{
+	float: left;
+	margin-left: 60px;
+}
+/*底部*/
+.footer{width: 100%;
+			height: 250px;
+			background-color: #525252;
+
+
+}
+.footerCenter{width: 1200px;
+				height: 250px;
+				margin: auto;
+				margin-top: 40px;
+				padding-top: 40px;
+}
+.footerLeft{width: 390px;
+			height: 69px;
+			float: left;
+			text-align: center;
+			
+}
+.dodb{border-left: 1px dashed  #999999;
+	border-right: 1px dashed  #999999;
+}
+.footerLeft p{color: #999999;}
+.footerLeft img{margin: 10px 4px;}
+.footerLeft span{display: block; color: white;}
+.footerCenter ul{	margin-left: 250px;
+				    margin-top: 66px;
+				    float: left;}
+.footerCenter li{float: left;
+					
+					margin-right: 50px;
+}
+.footerCenter a {color: #dadada;font-size: 12px;}
+.banquan{display: inline-block;
+				font-size: 12px;
+				color: #9c9c9c;
+				margin-left: 380px;
+				margin-top: 10px;
+
+}
+.footerCenter a:hover{color: orange;}

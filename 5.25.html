@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css" />
+		<title>node.js创建第一个应用</title>
+		<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+			#ul1 li a {
+				color: black;
+				font-family: "微软雅黑";
+				padding: 10px;
+			}
+			
+			#ul1 {
+				float: left;
+				position: fixed;
+			}
+			
+			#ul1 li a:hover {
+				color: red;
+			}
+			
+			.box {
+				width: 960px;
+				margin: auto;
+				/*border: 1px solid #ccc;*/
+			}
+			
+			.img1 {
+				width: 960px;
+				height: 350px;
+			}
+			li{
+				list-style: none;
+			}
+			.img2 {
+				float: right;
+				position: fixed;
+			}
+			
+			.img2 img {
+				position: fixed;
+				right: 0px;
+				bottom: 0px;
+			}
+			.p1 a{
+				text-decoration: none;
+				color: #000000;
+			}
+			pre{
+				background-color: #F7F7F7;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="ul1">
+			<li><a href="css3.html">属性选择符</a></li>
+			<li><a href="自适应.html">自适应布局</a></li>
+			<li><a href="静态.html">静态布局</a></li>
+			<li><a href="弹性.html">弹性布局</a></li>
+			<li><a href="流式.html">流式布局</a></li>
+			<li><a href="响应式.html">响应式布局</a></li>
+			<li><a href="jquery 轮播.html">jquery 轮播<a></li>
+	 	    <li><a href="js Data.html">js Date</a></li>
+			<li><a href="js DOM.html">js DOM</a></li>
+			<li><a href="js 事件侦听.html">js 事件侦听</a></li>
+			<li><a href="ajax.html">ajax</a></li>
+			<li><a href="log.html">git 上传</a></li>
+			<li><a href="bb.html">中级考核，面试题</a></li>
+			<li><a href="bootstrap.html">bootstrap全局css样式</a></li>
+			<li style="background-color: #C9E2B3;"><h4 style="font-size: 25px;padding: 10px;">node.js</h4></li>
+			<li><a href="5.25.html">创建第一个应用</a></li>
+		</ul>
+		<div class="box">
+			<img src="imgs/111.jpg" class="img1" />
+			<h3>node.js安装配置</h3>
+			<p class="p1"><a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" class="text-info">安装详情请点击</a></p>
+			<h3>使用方法</h3>
+			<ul>
+				<li>1.先创建js文件</li>
+				<li>2.在文件夹目录下打开cmd命令窗口</li>
+				<li>输入node +jsname.js</li>
+				<li>3.刷新js文件，命令窗口Ctrl+C两次,重新提交</li>
+			</ul>
+			<h1>node.js创建第一个应用</h1>
+			<h2>创建Node.js 应用</h2>
+			<h3>步骤一，引入require模块</h3>
+			<pre>
+				
+	    <span class="text-success">var</span> http = require(<span class="text-warning">"http"</span>);
+			
+			</pre>
+			<h3>步骤二，创建服务器</h3>
+			<pre>
+				
+				//步骤一 引入require模块
+<span class="text-info">var</span> http = require(<span class="text-warning">"http"</span>);
+//步骤二  创建服务器
+http.createServer(<span class="text-info">function</span>(<span class="text-warning">req,response</span>{
+	//发送HTTP头部
+	//HTTP状态值
+	//内容类型：text/plain
+	
+	response.writeHead(<span class="text-warning">200,"Content-Type","text/plain"</span>;
+	//发送响应数据"Hello Wor！"
+	response.end("< h1>Hello Wor!< /h1>");
+}).listen(80);//端口
+ 
+			</pre>
+		</div>
+		<div class="img2">
+			<img src="imgs/222.jpg" />
+		</div>
+	</body>
+</html>
