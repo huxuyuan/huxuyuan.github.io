@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+</html>
+    var option={
+        baseOption: {
+            timeline: {
+                //loop: false,
+                axisType: 'category',
+                show: true,
+                autoPlay: true,
+                playInterval: 1000,
+                data: ['1', '2', '3','4','5']
+            },
+            grid: { containLabel: true },
+            xAxis: [{
+                type: 'category',
+                name: '',
+            }, ],
+            yAxis: { type: 'value', name: 'Mwh' },
+            series: [
+                {
+                    type: 'bar',
+                },
+            ],
+            tooltip: {}
+        },
+        options:[
+            {
+                xAxis : [
+                    {
+                        type : 'category',
+                        data : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                        axisTick: {
+                            alignWithLabel: true
+                        }
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value'
+                    }
+                ],
+                series : [
+                    {
+                        name:'直接访问',
+                        type:'bar',
+                        barWidth: '60%',
+                        data:[10, 52, 200, 334, 390, 330, 220]
+                    }
+                ] 
+            }  ,
+            {
+                xAxis : [
+                    {
+                        type : 'category',
+                        data : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                        axisTick: {
+                            alignWithLabel: true
+                        }
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value'
+                    }
+                ],
+                series : [
+                    {
+                        name:'直接访问',
+                        type:'bar',
+                        barWidth: '60%',
+                        data:[10, 52, 200, 334, 390, 330, 220]
+                    }
+                ]
+            },
+            {
+                xAxis : [
+                    {
+                        type : 'category',
+                        data : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                        axisTick: {
+                            alignWithLabel: true
+                        }
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value'
+                    }
+                ],
+                series : [
+                    {
+                        name:'直接访问',
+                        type:'bar',
+                        barWidth: '60%',
+                        data:[10, 52, 200, 334, 390, 330, 220]
+                    }
+                ]
+            },
+            {
+                xAxis : [
+                    {
+                        type : 'category',
+                        data : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                        axisTick: {
+                            alignWithLabel: true
+                        }
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value'
+                    }
+                ],
+                series : [
+                    {
+                        name:'直接访问',
+                        type:'bar',
+                        barWidth: '60%',
+                        data:[10, 52, 200, 334, 390, 330, 220]
+                    }
+                ]            
+            },
+            {
+                xAxis : [
+                    {
+                        type : 'category',
+                        data : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                        axisTick: {
+                            alignWithLabel: true
+                        }
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value'
+                    }
+                ],
+                series : [
+                    {
+                        name:'直接访问',
+                        type:'bar',
+                        barWidth: '60%',
+                        data:[10, 52, 200, 334, 390, 330, 220]
+                    }
+                ]
+            }
+        ],
+        
+        series : [ 
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : ['50%', '70%'],
+                itemStyle : {
+                    normal : {
+                        label : {
+                            show : false
+                        },
+                        labelLine : {
+                            show : false
+                        }
+                    },
+                    emphasis : {
+                        label : {
+                            show : true,
+                            position : 'center',
+                            textStyle : {
+                                fontSize : '30',
+                                fontWeight : 'bold'
+                            }
+                        }
+                    }
+                },
+                data:[
+                    {value:335, name:'直接访问'},
+                    {value:310, name:'邮件营销'},
+                    {value:234, name:'联盟广告'},
+                    {value:135, name:'视频广告'},
+                    {value:1548, name:'搜索引擎'}
+                ]
+            }
+        ]
+    };

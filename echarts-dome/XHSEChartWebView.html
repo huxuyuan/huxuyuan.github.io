@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+    
+	<head>
+		<meta charset="UTF-8">
+        
+		<title></title>
+        
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+	</head> 
+	<style type="text/css">
+		  
+	#main{
+		overflow: hidden;  
+
+        position: fixed;
+
+        width:100%;
+
+        height:100%;
+
+        background: url(img/appbg.png) no-repeat;
+
+        background-size:cover;
+	}
+	</style>
+	<body>  
+        
+        <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+        <div id="main"></div>
+        <script type="text/javascript"> 
+            // 基于准备好的dom，初始化echarts实例
+            
+            
+        
+        //window.onresize = function() {
+        //  option.resize();
+        //}   
+//       echartsData();\
+
+   var url1 ="http://183.220.115.100:8088"
+   var siteToken = "1272c287-885f-4f4c-a9fc-8185edd248bb";
+   var token = "adfa5810-d228-4c73-81a8-65054b4194a7";  
+        	$.ajax({    
+        	type:"GET", 
+        	url:url1+"/api/device/web/reports?"+"token="+token+"&siteToken="+siteToken,  
+			dataType:"json",    
+			success:function(res){
+				console.log(res)  
+//							var echartData=res.results;
+//				 			var timeDate=[];//时间  
+//                          var proValue=[];//值 
+//                          // 时间格式转化
+//                          Date.prototype.Format = function (fmt) {
+//                              var o = { 
+//                                  "M+": this.getMonth() + 1, //月份
+//                                  "d+": this.getDate(), //日
+//                                  "h+": this.getHours(), //小时 
+//                                  "m+": this.getMinutes(), //分
+//                                  "s+": this.getSeconds(), //秒
+//                                  "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+//                                  "S": this.getMilliseconds() //毫秒
+//                              };
+//                              if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+//                              for (var k in o)
+//                                  if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+//                              return fmt;
+//                          }
+////                            判断为空的情况
+//							if(echartData.eventDatas==""){
+//								console.log("数据为空")
+//							}else{
+//								for(var i=0;i<echartData.eventDatas.events.length;i++){
+//                          	var sTime=echartData.eventDatas.events[i].eventDate;//时间
+//                          	var appValue=echartData.eventDatas.events[i].eventVal;//value
+//                          	var nowTime=new Date(sTime);//获取时间
+//                              var date=new Date(nowTime).Format("yyyy-MM-dd hh:mm")
+//                              timeDate.push(date);
+//                              proValue.push(appValue);
+//                          }
+//                           // 指定图表的配置项和数据
+//          var option = {
+//              title: {
+//                  text: '',
+//           
+//              },
+//              
+//              grid: {
+//                  left: '2%',
+//                  right: '15%',
+//                  bottom: '10%',
+//                  containLabel: true
+//              },
+//              
+//              tooltip: {},
+//              
+//              legend: {
+//                  //data:['人工报修','系统报修'],
+//                  data:['历史消息'],
+//                  x:'left',// ‘center’,'left','right'
+//              },
+//               
+//              xAxis: {
+//                  name:'日期',
+//                  boundaryGap: false,// false:节点在中心，true:节点在末尾
+//                  data: timeDate,
+//              }, 
+//              
+//              yAxis: {
+//                  name:'数量',
+//                  
+//              },
+//              
+//              series: [{
+//                      
+//                       //bar:柱形图，pie:扇形图 ,line:折线图, roseType: 'angle',
+//                       type: 'line',
+//                       symbolSize: 5,
+//                       hoverAnimation: true,
+//                       data: proValue,
+//                       }
+//                       //可以再这里，增加dic，来添加折线数量
+//                       ]
+//          };
+//      // 使用刚指定的配置项和数据显示图表。
+//      var myChart = echarts.init(document.getElementById('main')); 
+//      myChart.setOption(option);
+//      } 	 
+			},
+			error:function(error){
+				console.log(error)   
+			}
+        });
+        
+//      } 
+       
+        
+        
+        
+            </script>
+		
+		
+	</body>
+</html>
